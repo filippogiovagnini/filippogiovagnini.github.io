@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Mathematician</title>
+    <title>Filippo Giovagnini</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,30 +21,33 @@
         header h1 {
             margin: 0;
         }
-        section {
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 900px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
+        nav {
+            background-color: #444;
+            padding: 10px 0;
         }
-        section h2 {
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-        ul {
+        nav ul {
             list-style-type: none;
-            padding-left: 0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
-        ul li {
-            background-color: #f4f4f4;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .bio {
+            padding: 20px;
+            text-align: center;
         }
         footer {
             background-color: #333;
@@ -61,39 +64,29 @@
 <body>
 
 <header>
-    <h1>Your Name - Mathematician</h1>
+    <h1>Filippo Giovagnini</h1>
 </header>
 
-<section id="cv">
-    <h2>Curriculum Vitae (CV)</h2>
-    <p>A brief summary of your background, education, and research interests. You can attach or link a PDF file of your CV below:</p>
+<!-- Navigation Bar -->
+<nav>
     <ul>
-        <li><a href="path/to/your/cv.pdf" download>Download my CV (PDF)</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="ta-material.html">TA Material</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li class="contact"><a href="https://www.linkedin.com/in/filippo-giovagnini-7881461b6/">LinkedIn</a></li>
     </ul>
-</section>
+</nav>
 
-<section id="ta-material">
-    <h2>TA Material</h2>
-    <p>Here you can include resources or material you've prepared as a teaching assistant.</p>
-    <ul>
-        <li><a href="#">Lecture Notes for Algebra 101</a></li>
-        <li><a href="#">Problem Set Solutions - Calculus II</a></li>
-        <li><a href="#">Exam Reviews and Practice Questions</a></li>
-    </ul>
-</section>
+<!-- Bio Section -->
+<div class="bio">
+    <h2>About Me</h2>
+    <p>I am currently pursuing a PhD at Imperial College London, under the supervision of <a href="https://www.ma.imperial.ac.uk/~dcrisan/index.htm">Prof. Dan Crisan</a>. My research focuses on the approximation of solutions of Stochastic Partial Differential Equations (SPDEs) by interacting particle systems. I am also affiliated with the <a href="https://mfccdt.ac.uk/">Mathematics for our Future Climate</a> Center for Doctoral Training (MFC CDT), which is a joint program with the University of Reading and the University of Southampton. You can find more about my work on my <a href="https://profiles.imperial.ac.uk/f.giovagnini23">Imperial profile</a>.</p>
+</div>
 
-<section id="experiences">
-    <h2>Experiences</h2>
-    <p>Here, list your professional experiences or any relevant academic projects:</p>
-    <ul>
-        <li>Teaching Assistant for Calculus I, University Name (Year-Year)</li>
-        <li>Research Assistant in Mathematical Modeling, University Name (Year-Year)</li>
-        <li>Organized Mathematics Workshop, Conference Name (Year)</li>
-    </ul>
-</section>
 
 <footer>
-    <p>&copy; 2024 Your Name - All Rights Reserved</p>
+    <p>&copy; 2024 Filippo Giovagnini - All Rights Reserved</p>
 </footer>
 
 </body>
