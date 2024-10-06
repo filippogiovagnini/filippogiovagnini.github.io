@@ -59,6 +59,16 @@
         footer p {
             margin: 0;
         }
+        /* CSS */
+        .responsive-img {
+        width: 100%;
+        height: auto;
+        }
+        @media (min-width: 600px) {
+        .responsive-img {
+            width: 500px; /* or any other fixed width you prefer */
+        }
+        }
     </style>
 </head>
 <body>
@@ -85,9 +95,8 @@
     <p>This website is still under construction!</p>
     <p>I am currently pursuing a PhD at Imperial College London, under the supervision of <a href="https://www.ma.imperial.ac.uk/~dcrisan/index.htm">Prof. Dan Crisan</a>. My research focuses on the approximation of solutions of Stochastic Partial Differential Equations (SPDEs) by interacting particle systems. I am also affiliated with the <a href="https://mfccdt.ac.uk/">Mathematics for our Future Climate</a> Center for Doctoral Training (MFC CDT), which is a joint program with the University of Reading and the University of Southampton. This is my <a href="https://profiles.imperial.ac.uk/f.giovagnini23">Imperial profile</a>.</p>
     <p>You can contact me at <a href="mailto:f.giovagnini23@imperial.ac.uk">f.giovagnini23@imperial.ac.uk<a/></p>
-    <img src="animation.gif" alt="A deterministic particle system" width="500" height="300">
+    <img class="responsive-img" src="animation.gif" alt="A deterministic particle system" width="500" height="300">
 </div>
-
 
 <footer>
     <p>&copy; 2024 Filippo Giovagnini - All Rights Reserved</p>
