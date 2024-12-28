@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #212123;
+            color: #ffffff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #212123;
+            padding: 10px 0;
+            border-bottom: 0.5px solid #ffffff; /* Add this line to create a border */
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            justify-content: flex-start; /* Align items to the left */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            font-size: 14px; /* Make the font size smaller */
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .bio {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        /* CSS */
+        .responsive-img {
+        width: 100%;
+        height: auto;
+        }
+        @media (min-width: 600px) {
+        .responsive-img {
+            width: 500px; /* or any other fixed width you prefer */
+        }
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="index.html">about</a></li>
+        <li><a href="software.html">research</a></li>
+        <li><a href="software.html">sofware</a></li>
+        <li><a href="ta-material.html">cv</a></li>
+        <li><a href="experiences.html">teaching</a></li>
+        <li class="contact"><a href="https://github.com/filippogiovagnini">Github</a></li>
+        <li class="contact"><a href="https://www.linkedin.com/in/filippo-giovagnini-7881461b6/">LinkedIn</a></li>
+    </ul>
+</nav>
+
+<!-- Bio Section -->
+<div class="bio">
+    <h2>About Me</h2>
+    <p>This website is still under construction!</p>
+    <p>I am currently pursuing a PhD at Imperial College London, under the supervision of <a href="https://www.ma.imperial.ac.uk/~dcrisan/index.htm">Prof. Dan Crisan</a>. My research focuses on the approximation of solutions of Stochastic Partial Differential Equations (SPDEs) by interacting particle systems. I am also affiliated with the <a href="https://mfccdt.ac.uk/">Mathematics for our Future Climate</a> Center for Doctoral Training (MFC CDT), which is a joint program with the University of Reading and the University of Southampton. This is my <a href="https://profiles.imperial.ac.uk/f.giovagnini23">Imperial profile</a>.</p>
+    <p>You can contact me at <a href="mailto:f.giovagnini23@imperial.ac.uk">f.giovagnini23@imperial.ac.uk</a></p>
+    <h2>Preprints</h2>
+    <p>Here is my first preprint:
+        <a href="https://arxiv.org/abs/2410.23163v1">https://arxiv.org/abs/2410.23163v1</a>
+    </p>
+    <p>In the following animation you will see 11 point vortices that move following a deterministic differential equation (in black), and the same 11 point vortices moving following a stochastic differential equation (in red).</p>
+    <img class="responsive-img" src="animation.gif" alt="A deterministic particle system" width="500" height="300">
+</div>
+
+<footer>
+    <p>&copy; 2024 Filippo Giovagnini - All Rights Reserved</p>
+</footer> 
+
+</body>
+</html>
