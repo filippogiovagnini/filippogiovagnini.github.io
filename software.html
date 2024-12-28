@@ -73,10 +73,6 @@
     </head>
 <body>
 
-<header>
-    <h1>Filippo Giovagnini</h1>
-</header>
-
 <!-- Navigation Bar -->
 <nav>
     <ul>
@@ -89,6 +85,12 @@
     </ul>
 </nav>
 
+<!-- Bio -->
+<div class="bio">
+    <h2>GitHub Repositories</h2>
+    <p>Here are some of my GitHub repositories:</p>
+</div>
+
 <div class="repo-container" id="repo-container">
     <!-- GitHub repositories will be displayed here -->
 </div>
@@ -98,7 +100,7 @@
         const response = await fetch('https://api.github.com/users/filippogiovagnini/repos');
         const repos = await response.json();
         const repoContainer = document.getElementById('repo-container');
-        repos.forEach(repo => {
+        repos.filter(repo => !repo.private).forEach(repo => { // Filter only public repositories
             const repoElement = document.createElement('div');
             repoElement.className = 'repo';
             repoElement.innerHTML = `
