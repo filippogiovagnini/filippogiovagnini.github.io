@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px; /* Add vertical space at the beginning of the body */
+    background-color: #1d1d23; /* 212123 */
+    color: #c3c3c3;
+}
+header {
+    background-color: #1d1d23;
+    color: #b4b4b4;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    background-color: #1d1d23;
+    padding: 10px 0;
+    border-bottom: 0.5px solid #b4b4b4;
+    position: fixed; /* Fixes the navigation bar at the top */
+    width: 100%; /* Ensures the nav bar spans the full width */
+    top: 0; /* Positions the nav bar at the top */
+    z-index: 1000; /* Ensures the nav bar is above other content */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: flex-start; /* Align items to the left */
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    font-size: 14px; /* Make the font size smaller */
+    color: #b4b4b4;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 60px; /* Adjust this value to avoid content being hidden behind the fixed nav bar */
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the content */
+    margin-left: auto;
+    margin-right: auto;
+}
+.bio {
+    padding: 20px;
+    text-align: center;
+}
+.bio p {
+    line-height: 1.8; /* Adjust this value to increase space between lines */
+}
+
+
+footer {
+    background-color: #1d1d23; /* 333 */
+    color: #b4b4b4;
+    text-align: center;
+    border-top: 0.5px solid #b4b4b4;
+    padding: 10px;
+    margin-top: auto;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+}
+footer p {
+    margin: 0;
+}
+a {
+    color: #7a9b76; /* Change this value to your desired color 7e998a */
+}
+.bio {
+    padding: 20px;
+    margin-right: 500px;
+    margin-left: 100px /* Adjust this value to move content more to the left */
+}
+.left-align {
+    text-align: left;
+}
+/* CSS */
+.responsive-img {
+width: 100%;
+height: auto;
+}
+.content-block {
+    max-width: 800px;        /* Maximum width of the block */
+    margin: 20px auto;       /* Centers the block horizontally and adds vertical spacing */
+    padding: 20px;           /* Space inside the block */
+    background-color: #45454b; /* Light gray background */
+    border-radius: 8px;      /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.content-block {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3c3c49;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-block h2 {
+    margin-bottom: 20px;
+    color: #7a9b76;
+}
+
+.content-block section {
+    margin-bottom: 20px;
+}
+
+.content-block hr {
+    border: none;
+    border-top: 1px solid #b4b4b4;
+    margin: 20px 0;
+}
+@media (min-width: 600px) {
+.responsive-img {
+    width: 500px; /* or any other fixed width you prefer */
+}
+}
+@media (max-width: 1000px) {
+    .bio {
+        margin-left: 20px; /* Adjust this value for smaller screens */
+        margin-right: 30px; /* Adjust this value for smaller screens */
+    }
+}
