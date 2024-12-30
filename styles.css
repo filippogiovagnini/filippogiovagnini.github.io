@@ -80,6 +80,7 @@ a {
 }
 .bio p {
     line-height: 1.8; /* Adjust this value to increase space between lines */
+    text-align: left;
 }
 .left-align {
     text-align: left;
@@ -120,6 +121,7 @@ height: auto;
     border-top: 1px solid #b4b4b4;
     margin: 20px 0;
 }
+
 @media (min-width: 600px) {
 .responsive-img {
     width: 500px; /* or any other fixed width you prefer */
@@ -132,32 +134,13 @@ height: auto;
     }
 }
 
-/* CSS */
-#typing-text {
-    font-family: Arial, sans-serif; /* Match the body font */
-    color: #c3c3c3; /* Match the body text color */
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block; /* Ensure the cursor is displayed inline with the text */
-    font-size: 35px; /* Match the font size */
-    text-align: left;
+.container {
+    display: flex;
     padding: 0px;
-    margin-right: 1000px;
-    margin-left: 0px;
-    border-right: 0.05em solid #7a9b76; /* Cursor effect */
-    animation: blink-caret 0.75s step-end infinite;
-}
-
-.typing-cursor {
-    border-right: 0.05em solid #7a9b76; /* Cursor effect */
-    animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #7a9b76;
-    }
+    background: #1d1d23;
+    color: #c3c3c3;
+    font-size: 35px;
+    margin-right: 500px;
+    margin-left: 100px; /* Adjust this value to move content more to the left */
+    text-align: left;
 }
