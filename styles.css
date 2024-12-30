@@ -122,6 +122,17 @@ height: auto;
     margin: 20px 0;
 }
 
+.container {
+    display: flex;
+    padding: 0px;
+    background: #1d1d23;
+    color: #c3c3c3;
+    font-size: 35px;
+    margin-right: 500px;
+    margin-left: 100px; /* Adjust this value to move content more to the left */
+    text-align: left;
+}
+
 @media (min-width: 600px) {
 .responsive-img {
     width: 500px; /* or any other fixed width you prefer */
@@ -132,15 +143,8 @@ height: auto;
         margin-left: 20px; /* Adjust this value for smaller screens */
         margin-right: 30px; /* Adjust this value for smaller screens */
     }
-}
-
-.container {
-    display: flex;
-    padding: 0px;
-    background: #1d1d23;
-    color: #c3c3c3;
-    font-size: 35px;
-    margin-right: 500px;
-    margin-left: 100px; /* Adjust this value to move content more to the left */
-    text-align: left;
+    .container {
+        margin-left: 20px; /* Adjust this value for smaller screens */
+        margin-right: 30px; /* Adjust this value for smaller screens */
+    }
 }
