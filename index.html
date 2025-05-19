@@ -3,63 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo_mini.ico" type="image/x-icon" />
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<nav>
-    <ul>
-        <li><a href="index.html">about</a></li>
-        <li><a href="research.html">research</a></li>
-        <li><a href="software.html">sofware</a></li>
-        <li><a href="cv.html">cv</a></li>
-        <li><a href="ta-material.html">teaching</a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a class="btn btn-primary" href="index.html">
+                            <i class="fas fa-user"></i>about
+                        </a>
+                    </li>
+                    <li><a href="research.html">research</a></li>
+                    <li><a href="software.html">sofware</a></li>
+                    <li><a href="cv.html">cv</a></li>
+                    <li><a href="ta-material.html">teaching</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- Bio Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-heading text-xxl">
+                    Filippo Giovagnini
+                </h1>
+                <p class="hero-text text-lg">
+                    PhD candidate at Imperial College London.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Renovating</a>
+                    <a href="#" class="btn btn-secondary">the website...</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div style="height: 50px;"></div>
+    <section class="main">
+        <div class="container-md">
+            <div class="main-content">
+                <p class="main-text text-lg">
+                    I am a PhD candidate at Imperial College London, under the supervision of Prof. Dan Crisan. My research focuses on the approximation of solutions of Stochastic Partial Differential Equations (SPDEs) by interacting particle systems.
+                </p>
+                <p class="main-text text-lg">
+                    I am also affiliated with the Mathematics for our Future Climate Center for Doctoral Training (MFC CDT), which is a joint program with the University of Reading and the University of Southampton.
+                </p>
+                <p class="main-text text-lg">
+                    This is my <a href="https://profiles.imperial.ac.uk/f.giovagnini23">Imperial profile</a>.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
-    <p><b>Filippo </b><span class="auto-type"></span></p>
-</div>
+    <section class="video bg-black">
+        <div class="container-md">
+            <div class="video-content">
+                <a href="#">
+                    <img src="images/output.png" alt="video" class="video-preview" />
+                </a>
+                <a href="mailto:f.giovagnini23@imperial.ac.uk" class="btn btn-primary">send an e-mail</a>
+            </div>
+        </div>
+    </section>
 
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
 
-<script>
-    var typed = new Typed(".auto-type", {
-        strings: ["Giovagnini", "Giovagnini"],
-        typeSpeed: 150,
-        backSpeed: 50,
-        loop: true,
-    })
-</script>
-
-<div class="bio">
-    <p><span style="font-size: 20px;">PhD student, <a href="https://www.imperial.ac.uk/mathematics/">Department of Mathematics</a>, <a href="https://www.imperial.ac.uk/">Imperial College London</span></a></p>
-</div>
-
-<div class="bio">
+<!-- <div class="bio">
     <p>This website is still under construction!</p>
     <p>I am currently pursuing a PhD at Imperial College London, under the supervision of <a href="https://www.ma.imperial.ac.uk/~dcrisan/index.htm">Prof. Dan Crisan</a>. My research focuses on the approximation of solutions of Stochastic Partial Differential Equations (SPDEs) by interacting particle systems. I am also affiliated with the <a href="https://mfccdt.ac.uk/">Mathematics for our Future Climate</a> Center for Doctoral Training (MFC CDT), which is a joint program with the University of Reading and the University of Southampton. This is my <a href="https://profiles.imperial.ac.uk/f.giovagnini23">Imperial profile</a>.</p>
     <p>You can contact me at <a href="mailto:f.giovagnini23@imperial.ac.uk" style="color: #7a9b76;"><b>f.giovagnini23@imperial.ac.uk</b></a></p>
-</div>
-
-<div class="bio">
+</div> <div class="bio">
     <p><span style="font-size: 20px;"><b>News</b></span></p>
     <p>A Junior Stochastic Analysis seminar to appear soon! Click <a href="https://sites.google.com/view/imperial-stoch-junior">here</a> to stay updated!
-</div>
+</div> -->
 
-
-
-<!-- Add a spacer div before the footer -->
-<div style="height: 50px;"></div>
-
-<footer>
-    <p>&copy; 2024 Filippo Giovagnini - All Rights Reserved</p>
-</footer>
-
-</body>
 </html>
