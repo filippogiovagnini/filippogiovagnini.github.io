@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #7a9b76; /* 7e998a */
+    --secondary-color: #1d1d23; /* 212123 */
+    --text-color: #c3c3c3;
+    --light-text-color: #b4b4b4;
+    --background-color: #1d1d23; /* 212123 */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #1d1d23; /* 212123 */
+    color: #c3c3c3;
+}
+
+a {
+    text-decoration: none;
+    color: #c3c3c3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    background: #1d1d23; /* 212123 */
+    color: #b4b4b4;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 500;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    background: var(--light-text-color); /* 7e998a */
+    color: var(--primary-color);
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10 px;
+}
+
+/* Hero Section */
+
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container {
+    background: url('../images/for_web_2.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content {
+    width: 80%;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/* Video Section */
+
+.video {
+    padding: 10px 0 20px;
+}
+
+.video .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-content a {
+    font-size: 1.3rem;
+}
+
+.video-preview {
+    margin-bottom: 20px;
+}
+
+/* Main Section */
+
+.main {
+    padding: 20px 0;
+}
+.main .container-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main .main-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main .main-content h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.main .main-text {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.main p:hover a {
+    color: var(--primary-color);
+}
+
+.main p:hover {
+    background: var(--background-color); /* 7e998a */
+    color: inherit; /* Keep rest of text unchanged */
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #1d1d23;
+    color: #c3c3c3;
+    font-size: 35px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #1d1d23;
+    color: #c3c3c3;
+    font-size: 35px;
+}
+
+.container-md {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #1d1d23;
+    color: #c3c3c3;
+    font-size: 35px;
+}
+
+.container-big {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #1d1d23;
+    color: #c3c3c3;
+    font-size: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-dark {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+/* Text Classes */
+
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #333;
+}
+
+
+/* 
+
+
+
+*/
