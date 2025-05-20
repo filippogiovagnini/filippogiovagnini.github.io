@@ -360,6 +360,16 @@ img {
     .logo img {
         display: none;
     }
+
+    .hero-buttons .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.9rem;
+    }
+
+    .main-text {
+        font-size: 0.5rem;
+        line-height: 1.5;
+    }
 }
 
 @media (max-width: 500px) {
@@ -369,5 +379,24 @@ img {
 
     .navbar .hamburger-button {
         display: block;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 0.5rem;
+        width: 80%; /* Optional: makes buttons fill more horizontal space on mobile */
+        text-align: center;
+    }
+
+    .main-text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 1rem; /* adjust spacing if needed */
     }
 }
