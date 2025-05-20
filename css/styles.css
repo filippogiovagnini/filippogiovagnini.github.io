@@ -373,6 +373,10 @@ img {
         text-align: center;
     }
 
+    .hero-buttons {
+        background-color: red;
+    }
+
     .main-text {
         font-size: 0.5rem;
         line-height: 1.5;
