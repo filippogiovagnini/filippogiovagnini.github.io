@@ -102,6 +102,7 @@ img {
 /* Video Section */
 
 .video {
+    margin-top: 0;
     padding: 10px 0 20px;
 }
 
@@ -129,15 +130,17 @@ img {
 /* Main Section */
 
 .main {
-    margin-bottom: 50px;
+    position: relative;
+    z-index: 1; /* keep it above background */
 }
 
 .main .container {
     background: var(--background-color);
     background-size: contain;
     background-position: center bottom;
-    height: 300px;
+    min-height: 300px; /* or remove entirely */
     margin-bottom: 100px;
+    height: auto; /* explicitly reset */
 }
 
 .main .main-content {
@@ -182,7 +185,7 @@ img {
     padding: 0 15px;
     background: #1d1d23;
     color: #c3c3c3;
-    font-size: 35px;
+    /* font-size: 35px; */
 }
 
 .container-sm {
@@ -347,8 +350,6 @@ img {
     font-size: 18px;
 }
 
-
-
 @media (max-width: 960px) {
 }
 
@@ -371,10 +372,6 @@ img {
         margin-bottom: 0.5rem;
         width: 80%; /* Optional: makes buttons fill more horizontal space on mobile */
         text-align: center;
-    }
-
-    .hero-buttons {
-        background-color: red;
     }
 
     .main-text {
