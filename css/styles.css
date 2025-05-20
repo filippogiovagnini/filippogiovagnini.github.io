@@ -243,6 +243,12 @@ img {
     color: #fff;
 }
 
+.indented-list {
+    list-style-type: disc;       /* Show bullet points */
+    list-style-position: outside;
+    padding-left: 5rem;          /* Indent the list */
+}
+
 /* Text Classes */
 
 .text-xxl {
