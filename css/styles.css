@@ -29,6 +29,24 @@ ul {
     list-style-type: none;
 }
 
+.main-text, 
+.main-text ul, 
+.main-text ul ul {
+    list-style-type: disc !important;  /* solid circle for all levels by default */
+    color: white;                      /* make bullets and text white */
+    padding-left: 1.5rem;              /* indent nested lists */
+}
+
+/* Different bullet for nested ul inside ul */
+.main-text ul ul {
+    list-style-type: square !important; /* square bullets for second-level nested */
+}
+
+/* Force bullet color with ::marker */
+.main-text li::marker {
+    color: white !important;
+}
+
 img {
     max-width: 100%;
 }
@@ -176,6 +194,41 @@ img {
 .main li:hover {
     background: var(--background-color); /* 7e998a */
     color: inherit; /* Keep rest of text unchanged */
+}
+
+.repo-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the boxes */
+}
+.repo {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.repo:hover {
+    transform: translateY(-5px);
+}
+.repo h3 {
+    margin: 0 0 10px 0;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides the overflow text */
+    text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
+}
+.repo p {
+    margin: 5px 0;
+}
+.repo a {
+    color: #7a9b76;
+    text-decoration: none;
+}
+.repo a:hover {
+    text-decoration: underline;
 }
 
 /* Utility Classes */
@@ -381,7 +434,7 @@ img {
     }
 
     .main-text {
-        font-size: 0.5rem;
+        font-size: 0.2rem;
         line-height: 1.5;
     }
 }
@@ -408,9 +461,45 @@ img {
         text-align: center;
     }
 
+    .main {
+        max-width: 95vw;     /* almost full viewport width */
+        padding-left: 1vw;   /* small side padding */
+        padding-right: 1vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .main-text {
-        font-size: 0.9rem;
+        font-size: 0.65rem !important;
         line-height: 1.4;
         margin-bottom: 1rem; /* adjust spacing if needed */
+        margin-left: auto;
+        list-style-type: disc;
+    }
+
+    .main .main-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-text {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .main-text ul ul {
+        list-style-type: square; /* e.g. filled squares for second level */
+        margin-left: 1.5rem;
+        color: white;
+    }
+
+    .main-content {
+        position: relative;
+        left: -15px; /* Move 10px to the left */
+    }
+
+    .repo {
+        flex: 1 1 100%;
     }
 }
