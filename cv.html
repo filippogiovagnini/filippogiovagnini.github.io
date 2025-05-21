@@ -3,79 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo_mini.ico" type="image/x-icon" />
 </head>
 <body>
 
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a class="btn btn-primary" href="index.html">
+                            <i class="fas fa-user"></i>about
+                        </a>
+                    </li>
+                    <li><a href="research.html">research</a></li>
+                    <li><a href="software.html">software</a></li>
+                    <li><a href="cv.html">cv</a></li>
+                    <li><a href="ta-material.html">teaching</a></li>
+                </ul>
+            </div>
+            <!-- Hambunger button -->
+            <button class="hamburger-button">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">about</a></li>
+                    <li><a href="research.html">research</a></li>
+                    <li><a href="software.html">sofware</a></li>
+                    <li><a href="cv.html">cv</a></li>
+                    <li><a href="ta-material.html">teaching</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- Navigation Bar -->
-<nav>
-    <ul>
-        <li><a href="index.html">about</a></li>
-        <li><a href="research.html">research</a></li>
-        <li><a href="software.html">sofware</a></li>
-        <li><a href="cv.html">cv</a></li>
-        <li><a href="ta-material.html">teaching</a></li>
-    </ul>
-</nav>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-text text-lg">
+                    Click below for a detailed version of my CV:
+                </p>
+                <div class="hero-buttons">
+                    <a href="Curriculum_Vitae.pdf" class="btn btn-primary">Detailed CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="bio">
-    <p class="left-align"><span style="font-size: 35px;">cv</span></p>
-    <p class="left-align">Click <a href="Curriculum_Vitae.pdf">here</a> for a fully detailed version of my CV.</p>
-</div>
-<div class="content-block">
-    <h2>Employment</h2>
-    <section>
-        <h3>Aleta Index</h3>
-        <p>Working part-time as a data science intern, 2025 - present</p>
+    <section class="main">
+        <div class="container">
+            <div class="main-content">
+                <ul class="main-text text-sm indented-list">
+                    <li>
+                        <b>Education</b>
+                        <ul>
+                            <li>2023 - present: PhD in Mathematics, <b>Imperial College London</b></li>
+                            <li>2022 - 2023: MSc in Mathematics, <b>University of Pisa</b></li>
+                            <li>2022 - 2023: Exchnage period, <b>ETH Zurich</b></li>
+                            <li>2019 - 2022: BSc in Mathematics, <b>University of Pisa</b></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Experiences</b>
+                        <ul>
+                            <li>Soon - <b>Speaker</b></li>
+                            <li>2025 - present: <b>Data Science Intern</b> at Aleta Index</li>
+                            <li>2024 - 2025: <b>Teaching Assistant</b> for "Stochastic Calculus for Finance" at the Imperial Business School</li>
+                            <li>2025 - 2025: Given a <b>short talk at the Simon Center</b> for the winter school</li>
+                            <li>2024 - 2024: Given a <b>talk at the University of Bologna</b></li>
+                            <li>2024 - 2024: TuBa conference at SNS, Pisa</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <hr>
-    <section>
-        <h3>Imperial College London</h3>
-        <p>Sole Teaching Assistant for the course "Stochastic Calculus for Finance", 2024 - 2025</p>
-    </section>
-    <hr>
-    <section>
-        <h3>University of Pisa</h3>
-        <p>Teaching Assistant for the course "Higher Mathematical Analysis", 2022 - 2023</p>
-    </section>
-</div>
-<div class="content-block">
-    <h2>Education</h2>
-    <section>
-        <h3>PhD in Stochastic Analysis, Imperial College London - ongoing</h3>
-        <p>Supervision of Prof. Dan Crisan</p>
-    </section>
-    <hr>
-    <section>
-        <h3>Master degree in Pure Mathematics, University of Pisa</h3>
-        <p>Final grade: 110/110 cum laude (with honors)</p>
-        <p>GPA: 30/30</p>
-    </section>
-    <hr>
-    <section>
-        <h3>Exchange semester, ETH Zurich</h3>
-        <p>Focus on Optimal Transport and Quantitative Finance</p>
-    </section>
-    <hr>
-    <section>
-        <h3>Bachelor degree in Pure Mathematics, University of Pisa</h3>
-        <p>Final grade: 110/110 cum laude (with honors)</p>
-        <p>GPA: 29.85/30</p>
-    </section>
-</div>
 
-<div class="content-block">
-    <h2>Experiences</h2>
-    <p>Check the fully detailed version of the CV <a href="Curriculum_Vitae.pdf">here</a> :) </p>
-</div>
+    <section class="video bg-black">
+        <div class="container">
+            <div class="video-content">
+                <a href="#">
+                    <img src="images/output.png" alt="video" class="video-preview" />
+                </a>
+            </div>
+        </div>
+    </section>
 
-<!-- Add a spacer div before the footer -->
-<div style="height: 50px;"></div>
-
-<footer>
-    <p>&copy; 2024 Filippo Giovagnini - All Rights Reserved</p>
-</footer> 
-
+<script src="js/main.js"></script>
 </body>
+
+<!-- <div class="bio">
+    <p>This website is still under construction!</p>
+    <p>I am currently pursuing a PhD at Imperial College London, under the supervision of <a href="https://www.ma.imperial.ac.uk/~dcrisan/index.htm">Prof. Dan Crisan</a>. My research focuses on the approximation of solutions of Stochastic Partial Differential Equations (SPDEs) by interacting particle systems. I am also affiliated with the <a href="https://mfccdt.ac.uk/">Mathematics for our Future Climate</a> Center for Doctoral Training (MFC CDT), which is a joint program with the University of Reading and the University of Southampton. This is my <a href="https://profiles.imperial.ac.uk/f.giovagnini23">Imperial profile</a>.</p>
+    <p>You can contact me at <a href="mailto:f.giovagnini23@imperial.ac.uk" style="color: #7a9b76;"><b>f.giovagnini23@imperial.ac.uk</b></a></p>
+</div> <div class="bio">
+    <p><span style="font-size: 20px;"><b>News</b></span></p>
+    <p>A Junior Stochastic Analysis seminar to appear soon! Click <a href="https://sites.google.com/view/imperial-stoch-junior">here</a> to stay updated!
+</div> -->
+
 </html>
