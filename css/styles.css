@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "carbon";
+    src: url("carbonplus-regular-bl.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +20,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "carbon", monospace;
     font-size: 16px;
     line-height: 1.5;
     background: #1d1d23; /* 212123 */
