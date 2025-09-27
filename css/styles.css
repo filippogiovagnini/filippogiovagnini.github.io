@@ -121,7 +121,7 @@ img {
 
 .hero .hero-text {
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 /* Video Section */
@@ -458,6 +458,7 @@ img {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 100px;
     }
 
     .hero-buttons .btn {
