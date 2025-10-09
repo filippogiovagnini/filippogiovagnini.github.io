@@ -433,7 +433,7 @@ img {
     }
 
     .hero-buttons .btn {
-        font-size: 0.75rem;
+        font-size: 0.80rem;
         padding: 0.4rem 0.8rem;
         margin-bottom: 0.5rem;
         width: 80%; /* Optional: makes buttons fill more horizontal space on mobile */
@@ -478,7 +478,7 @@ img {
     }
 
     .main-text {
-        font-size: 0.65rem !important;
+        font-size: 0.90rem !important;
         line-height: 1.4;
         margin-bottom: 1rem; /* adjust spacing if needed */
         margin-left: auto;
