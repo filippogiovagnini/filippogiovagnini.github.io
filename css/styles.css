@@ -411,9 +411,11 @@ img {
     right: -300px;
     width: 250px;
     height: 100%;
-    z-index:100;
-    background: var(--secondary-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Much higher z-index to ensure it's above all content */
+    background: rgba(29, 29, 35, 0.95); /* Semi-transparent background for consistency */
+    backdrop-filter: blur(15px); /* Add blur effect like other elements */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for better visibility */
     transition: right 0.3s ease-in-out;
     justify-content: space-between;
 }
