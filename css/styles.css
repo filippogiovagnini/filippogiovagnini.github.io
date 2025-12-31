@@ -406,31 +406,38 @@ img {
 /* Mobile Menu */
 
 .mobile-menu {
-    position: fixed;
-    top: 0;
+    position: fixed !important; /* Force fixed positioning */
+    top: 0 !important;
     right: -300px;
     width: 250px;
-    height: 100%;
-    z-index: 9999; /* Much higher z-index to ensure it's above all content */
+    height: 100vh !important; /* Use viewport height */
+    z-index: 99999 !important; /* Even higher z-index with !important */
     background: rgba(29, 29, 35, 0.95); /* Semi-transparent background for consistency */
     backdrop-filter: blur(15px); /* Add blur effect like other elements */
     -webkit-backdrop-filter: blur(15px); /* Safari support */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for better visibility */
     transition: right 0.3s ease-in-out;
     justify-content: space-between;
+    pointer-events: auto !important; /* Ensure it can receive clicks */
 }
 
 .mobile-menu.active {
-    right: 0;
+    right: 0 !important;
+    z-index: 99999 !important; /* Ensure active menu is on top */
+    pointer-events: auto !important; /* Ensure it's interactive */
 }
 
 .mobile-menu ul {
     margin-top: 100px;
     padding-right: 10px;
+    position: relative !important;
+    z-index: 100001 !important; /* Higher than the menu itself */
 }
 
 .mobile-menu ul li {
     margin: 10px 0;
+    position: relative !important;
+    z-index: 100002 !important; /* Even higher for list items */
 }
 
 .mobile-menu ul li a {
@@ -442,6 +449,9 @@ img {
     /* Enable 3D transforms for mobile menu items */
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    position: relative !important; /* Ensure proper positioning */
+    z-index: 100000 !important; /* Highest z-index for links */
+    pointer-events: auto !important; /* Ensure links are clickable */
 }
 
 @media (max-width: 960px) {
