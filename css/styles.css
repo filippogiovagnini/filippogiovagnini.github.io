@@ -60,7 +60,9 @@ img {
 
 /* Navbar */
 .navbar {
-    background: #1d1d23; /* 212123 */
+    background: transparent; /* Completely transparent background */
+    backdrop-filter: blur(15px); /* Stronger blur for better text readability */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
     color: #b4b4b4;
     padding: 20px;
     text-align: center;
@@ -82,6 +84,9 @@ img {
     font-weight: 500;
     transition: 0.5s;
     font-size: 18px;
+    /* Enable 3D transforms */
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .navbar ul li a:hover {
@@ -117,6 +122,12 @@ img {
 
 .hero .hero-content {
     width: 80%;
+    background: rgba(29, 29, 35, 0.3); /* More transparent background */
+    backdrop-filter: blur(8px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    border-radius: 15px; /* Add rounded corners */
+    padding: 30px; /* Add padding */
+    margin-top: 50px; /* Add some top margin */
 }
 
 .hero .hero-text {
@@ -136,6 +147,11 @@ img {
     flex-direction: column;
     align-items: center;
     width: 80%;
+    background: rgba(29, 29, 35, 0.3); /* More transparent background */
+    backdrop-filter: blur(8px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    border-radius: 15px; /* Add rounded corners */
+    padding: 30px; /* Add padding */
 }
 
 .video-content {
@@ -160,7 +176,11 @@ img {
 }
 
 .main .container {
-    background: var(--background-color);
+    background: rgba(29, 29, 35, 0.3); /* More transparent background */
+    backdrop-filter: blur(8px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    border-radius: 15px; /* Add rounded corners for modern look */
+    padding: 30px; /* Add padding for better spacing */
     background-size: contain;
     background-position: center bottom;
     min-height: 300px; /* or remove entirely */
@@ -378,6 +398,9 @@ img {
     background-color: #fff;
     margin: 6px 0;
     transition: all 0.3s ease;
+    /* Enable 3D transforms for hamburger animation */
+    transform-origin: center;
+    backface-visibility: hidden;
 }
 
 /* Mobile Menu */
@@ -414,6 +437,9 @@ img {
     font-weight: 500;
     transition: 0.5s;
     font-size: 18px;
+    /* Enable 3D transforms for mobile menu items */
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 @media (max-width: 960px) {
