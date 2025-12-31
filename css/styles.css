@@ -123,8 +123,9 @@ img {
 .hero .hero-content {
     width: 80%;
     background: rgba(29, 29, 35, 0.3); /* More transparent background */
-    backdrop-filter: blur(8px); /* Add blur effect */
-    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    /* Temporarily remove backdrop-filter to fix mobile menu z-index issues */
+    /* backdrop-filter: blur(8px); */
+    /* -webkit-backdrop-filter: blur(8px); */
     border-radius: 15px; /* Add rounded corners */
     padding: 30px; /* Add padding */
     margin-top: 50px; /* Add some top margin */
@@ -148,8 +149,9 @@ img {
     align-items: center;
     width: 80%;
     background: rgba(29, 29, 35, 0.3); /* More transparent background */
-    backdrop-filter: blur(8px); /* Add blur effect */
-    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    /* Temporarily remove backdrop-filter to fix mobile menu z-index issues */
+    /* backdrop-filter: blur(8px); */
+    /* -webkit-backdrop-filter: blur(8px); */
     border-radius: 15px; /* Add rounded corners */
     padding: 30px; /* Add padding */
 }
@@ -177,8 +179,9 @@ img {
 
 .main .container {
     background: rgba(29, 29, 35, 0.3); /* More transparent background */
-    backdrop-filter: blur(8px); /* Add blur effect */
-    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    /* Temporarily remove backdrop-filter to fix mobile menu z-index issues */
+    /* backdrop-filter: blur(8px); */
+    /* -webkit-backdrop-filter: blur(8px); */
     border-radius: 15px; /* Add rounded corners for modern look */
     padding: 30px; /* Add padding for better spacing */
     background-size: contain;
@@ -405,26 +408,37 @@ img {
 
 /* Mobile Menu */
 
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .mobile-menu {
+        -webkit-transform: translateZ(0) !important;
+        transform: translateZ(0) !important;
+        -webkit-backface-visibility: hidden !important;
+        backface-visibility: hidden !important;
+    }
+}
+
 .mobile-menu {
-    position: fixed !important; /* Force fixed positioning */
+    position: fixed !important;
     top: 0 !important;
     right: -300px;
     width: 250px;
-    height: 100vh !important; /* Use viewport height */
-    z-index: 99999 !important; /* Even higher z-index with !important */
-    background: rgba(29, 29, 35, 0.95); /* Semi-transparent background for consistency */
-    backdrop-filter: blur(15px); /* Add blur effect like other elements */
-    -webkit-backdrop-filter: blur(15px); /* Safari support */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for better visibility */
+    height: 100vh !important;
+    z-index: 2147483647 !important; /* Maximum possible z-index value */
+    background: rgba(29, 29, 35, 0.98) !important; /* Almost opaque for better visibility */
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.8) !important;
     transition: right 0.3s ease-in-out;
     justify-content: space-between;
-    pointer-events: auto !important; /* Ensure it can receive clicks */
+    pointer-events: auto !important;
+    transform: translateZ(0) !important; /* Force hardware acceleration and new stacking context */
+    will-change: transform !important; /* Optimize for animations */
 }
 
 .mobile-menu.active {
     right: 0 !important;
-    z-index: 99999 !important; /* Ensure active menu is on top */
-    pointer-events: auto !important; /* Ensure it's interactive */
+    z-index: 2147483647 !important; /* Maximum z-index */
+    pointer-events: auto !important;
+    transform: translateZ(1px) !important; /* Force even higher stacking */
 }
 
 .mobile-menu ul {
@@ -450,8 +464,11 @@ img {
     transform-style: preserve-3d;
     backface-visibility: hidden;
     position: relative !important; /* Ensure proper positioning */
-    z-index: 100000 !important; /* Highest z-index for links */
+    z-index: 2147483647 !important; /* Maximum z-index for links */
     pointer-events: auto !important; /* Ensure links are clickable */
+    color: #ffffff !important; /* Force white text for visibility */
+    background: rgba(122, 155, 118, 0.2) !important; /* Slight green background for debugging */
+    margin: 2px 0 !important; /* Add margin for better visibility */
 }
 
 @media (max-width: 960px) {
