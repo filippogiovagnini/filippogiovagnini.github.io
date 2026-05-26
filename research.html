@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Filippo Giovagnini</title>
+    <meta name="description" content="Preprints and research interests of Filippo Giovagnini in stochastic analysis, interacting particle systems and SPDEs.">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="images/logo_mini.ico" type="image/x-icon" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
 
@@ -17,15 +15,13 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
+                    <img src="images/logo.png" alt="Filippo Giovagnini home">
                 </a>
             </div>
             <div class="main-menu">
                 <ul>
                     <li>
-                        <a class="btn btn-primary" href="index.html">
-                            <i class="fas fa-user"></i>about
-                        </a>
+                        <a href="index.html">about</a>
                     </li>
                     <li><a href="research.html">research</a></li>
                     <li><a href="software.html">software</a></li>
@@ -33,9 +29,7 @@
                     <li><a href="ta-material.html">teaching</a></li>
                 </ul>
             </div>
-            <!-- Hambunger button -->
-            <button class="hamburger-button">
-                <div class="hamburger-line"></div>
+            <button class="hamburger-button" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
@@ -43,8 +37,7 @@
         </div>
     </nav>
 
-    <!-- Mobile menu moved outside navbar for proper z-index layering -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
         <ul>
             <li><a href="index.html">about</a></li>
             <li><a href="research.html">research</a></li>
@@ -54,43 +47,59 @@
         </ul>
     </div>
 
-    <section class="main">
+    <header class="page-hero">
         <div class="container">
-            <div class="main-content">
-                <p class="main-text text-lg">
-                    <b><b>My research:</b></b>
-                </p>
-                <p class="main-text text-md">
-                    List of my preprints:
-                    <ul class="main-text text-sm indented-list">
-                        <li>
-                            <a href="https://arxiv.org/abs/2504.12960" target="_blank">
-                                A uniform particle approximation to the Navier-Stokes-alpha models in three dimensions with advection noise
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://arxiv.org/abs/2410.23163" target="_blank">
-                                A uniform point vortex approximation for the solution of the two-dimensional Navier Stokes equation with transport noise
-                            </a>
-                        </li>
-                    </ul>
-                </p>
-                <p class="main-text text-lg">
-                    This is a list of my research interests (I am very keen to discuss about them, please feel free to connect!):
-                    <ul class="main-text text-sm indented-list">
-                        <li>Interacting particle systems and their mean field limits.</li>
-                        <li>Numerical approximation of SPDEs.</li>
-                        <li>Scientific Machine Learning.</li>
-                    </ul>
-                </p>
-                <p class="main-text text-lg">
-                    <a href="files/review_of_flandoli_priola_gubinelli.pdf">Here</a> you can find a little review I have made of the work by Flandoli, Gubinelli, and Priola (2010) on the well-posedness of the transport equation under stochastic perturbations for a reading group happened at ICL.
-                </p>
-            </div>
+            <p class="eyebrow">Research</p>
+            <h1 class="text-xxl">Stochastic analysis and particle approximations</h1>
+            <p class="page-intro text-md">My work concerns stochastic partial differential equations, transport noise and particle-based approximations.</p>
         </div>
-    </section>
+    </header>
 
-<script src="js/main.js"></script>
+    <main class="content-section">
+        <div class="container content-grid">
+            <section class="content-card publications">
+                <h2 class="text-xl">Preprints</h2>
+                <ol class="publication-list">
+                    <li>
+                        <span class="meta-label">Preprint</span>
+                        <a class="publication-title" href="https://arxiv.org/abs/2504.12960" target="_blank" rel="noopener noreferrer">
+                            A uniform particle approximation to the Navier-Stokes-alpha models in three dimensions with advection noise
+                        </a>
+                        <span class="publication-meta">arXiv:2504.12960</span>
+                    </li>
+                    <li>
+                        <span class="meta-label">Preprint</span>
+                        <a class="publication-title" href="https://arxiv.org/abs/2410.23163" target="_blank" rel="noopener noreferrer">
+                            A uniform point vortex approximation for the solution of the two-dimensional Navier Stokes equation with transport noise
+                        </a>
+                        <span class="publication-meta">arXiv:2410.23163</span>
+                    </li>
+                </ol>
+            </section>
+            <aside class="content-card">
+                <h2 class="card-heading">Research interests</h2>
+                <ul class="topic-list">
+                    <li>Interacting particle systems and mean-field limits</li>
+                    <li>Numerical approximation of SPDEs</li>
+                    <li>Scientific machine learning</li>
+                </ul>
+            </aside>
+            <section class="content-card resource-card">
+                <p class="meta-label">Reading group note</p>
+                <h2 class="card-heading">Stochastic perturbations of transport equations</h2>
+                <p>A review of the work of Flandoli, Gubinelli and Priola (2010), prepared for a reading group at Imperial College London.</p>
+                <a href="files/review_of_flandoli_priola_gubinelli.pdf" class="text-link">Read the note (PDF)</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Filippo Giovagnini</p>
+            <a href="mailto:f.giovagnini23@imperial.ac.uk">f.giovagnini23@imperial.ac.uk</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching | Filippo Giovagnini</title>
+    <meta name="description" content="Teaching materials and course resources shared by Filippo Giovagnini.">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="images/logo_mini.ico" type="image/x-icon" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
 
@@ -17,15 +15,13 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
+                    <img src="images/logo.png" alt="Filippo Giovagnini home">
                 </a>
             </div>
             <div class="main-menu">
                 <ul>
                     <li>
-                        <a class="btn btn-primary" href="index.html">
-                            <i class="fas fa-user"></i>about
-                        </a>
+                        <a href="index.html">about</a>
                     </li>
                     <li><a href="research.html">research</a></li>
                     <li><a href="software.html">software</a></li>
@@ -33,9 +29,7 @@
                     <li><a href="ta-material.html">teaching</a></li>
                 </ul>
             </div>
-            <!-- Hambunger button -->
-            <button class="hamburger-button">
-                <div class="hamburger-line"></div>
+            <button class="hamburger-button" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
@@ -43,8 +37,7 @@
         </div>
     </nav>
 
-    <!-- Mobile menu moved outside navbar for proper z-index layering -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
         <ul>
             <li><a href="index.html">about</a></li>
             <li><a href="research.html">research</a></li>
@@ -54,36 +47,46 @@
         </ul>
     </div>
 
-    <section class="main">
+    <header class="page-hero">
         <div class="container">
-            <div class="main-content">
-                <p class="main-text text-md">
-                    News:
-                    <ul class="main-text text-sm indented-list">
-                        <li>
-                            Office hour @ 2pm uk time on Wednesdays, 665 Huxley building. 
-                        </li>
-                    </ul>
-                </p>
-                <p class="main-text text-lg">
-                    SCforF 25/26:
-                    <ul class="main-text text-sm indented-list">
-                        <li>Next lecture will be on 15/10.</li>
-                        <li>You can access the notes of the lectures <a href="https://imperiallondon-my.sharepoint.com/:b:/g/personal/fg323_ic_ac_uk/EYRKwOlWiQhNiLSioweD-WIBg19HFG6Zzrfy9GXZwG_69Q?e=MRr4J4">here</a></li>
-                        <li>To open the file containing the most important properties to revise before the exam click <a href="files/SCforF.pdf">here</a>. Hopefully, this file will be updated regularly.</li>
-                    </ul>
-                </p>
-                <p class="main-text text-lg">
-                    SCforF 24/25:
-                    <ul class="main-text text-sm indented-list">
-                        <li>To open a GitHub repository with some code to visualize the Brownian Motion click <a href="https://github.com/filippogiovagnini/SCforF/blob/main/intro_BM_SDE.ipynb">here</a></li>
-                </ul>
-                </p>
-            </div>
+            <p class="eyebrow">Teaching</p>
+            <h1 class="text-xxl">Course materials and resources</h1>
+            <p class="page-intro text-md">Lecture notes, revision material and computational examples for students.</p>
         </div>
-    </section>
+    </header>
 
-<script src="js/main.js"></script>
+    <main class="content-section">
+        <div class="container content-grid teaching-grid">
+            <section class="content-card">
+                <p class="meta-label">2025/26</p>
+                <h2 class="text-xl">SCforF</h2>
+                <div class="resource-links">
+                    <a href="https://imperiallondon-my.sharepoint.com/:b:/g/personal/fg323_ic_ac_uk/EYRKwOlWiQhNiLSioweD-WIBg19HFG6Zzrfy9GXZwG_69Q?e=MRr4J4" target="_blank" rel="noopener noreferrer">
+                        Lecture notes
+                        <span>View current course notes</span>
+                    </a>
+                    <a href="files/SCforF.pdf">
+                        Revision properties
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </section>
+            <section class="content-card">
+                <p class="meta-label">Archive | 2024/25</p>
+                <h2 class="text-xl">Computational example</h2>
+                <p class="card-copy">Code illustrating Brownian motion for students working through the course material.</p>
+                <a href="https://github.com/filippogiovagnini/SCforF/blob/main/intro_BM_SDE.ipynb" class="text-link" target="_blank" rel="noopener noreferrer">Open the notebook on GitHub</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Filippo Giovagnini</p>
+            <a href="mailto:f.giovagnini23@imperial.ac.uk">f.giovagnini23@imperial.ac.uk</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
