@@ -6,6 +6,10 @@ on:
   push:
     branches: ["main"]
 
+  # Refresh the deployed pinned repositories once a day
+  schedule:
+    - cron: "17 4 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -31,6 +35,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Refresh pinned repositories
+        run: node scripts/sync-pinned-repos.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: filippogiovagnini
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

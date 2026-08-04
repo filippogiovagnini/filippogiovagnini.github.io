@@ -3,102 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filippo Giovagnini | Applied Mathematics Researcher</title>
-    <meta name="description" content="Filippo Giovagnini is a PhD candidate at Imperial College London working on stochastic partial differential equations and interacting particle systems.">
+    <title>Filippo Giovagnini | Machine Learning Research</title>
+    <meta name="description" content="Filippo Giovagnini is a Mathematics PhD candidate at Imperial College London working on deep-learning theory, transformers, agent systems and stochastic analysis.">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/logo_mini.ico" type="image/x-icon" />
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="shortcut icon" href="images/logo_mini.ico" type="image/x-icon">
 </head>
 <body>
+    <a class="skip-link" href="#content">Skip to content</a>
 
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Filippo Giovagnini home">
-                </a>
-            </div>
-            <div class="main-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">about</a>
-                    </li>
-                    <li><a href="research.html">research</a></li>
-                    <li><a href="software.html">software</a></li>
-                    <li><a href="cv.html">cv</a></li>
-                    <li><a href="ta-material.html">teaching</a></li>
-                </ul>
-            </div>
-            <button class="hamburger-button" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-            </button>
-        </div>
-    </nav>
+    <main class="site-shell" id="content">
+        <section class="intro-grid" id="about" aria-labelledby="profile-name">
+            <aside class="profile-column">
+                <img class="profile-photo" src="images/profile.jpg" alt="Portrait of Filippo Giovagnini" width="720" height="720">
+                <div class="profile-summary">
+                    <h1 id="profile-name">Filippo Giovagnini</h1>
+                    <p>Mathematics PhD @ ICL</p>
+                    <p>Data Scientist @ SP</p>
+                </div>
 
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-        <ul>
-            <li><a href="index.html">about</a></li>
-            <li><a href="research.html">research</a></li>
-            <li><a href="software.html">software</a></li>
-            <li><a href="cv.html">cv</a></li>
-            <li><a href="ta-material.html">teaching</a></li>
-        </ul>
-    </div>
+                <nav class="profile-links" aria-label="Profile links">
+                    <a href="https://github.com/filippogiovagnini" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/filippo-giovagnini-7881461b6/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=x_rpETQAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                    <a href="mailto:f.giovagnini23@imperial.ac.uk">Email</a>
+                    <a href="files/Curriculum_Vitae.pdf">CV</a>
+                </nav>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <p class="eyebrow">Stochastic analysis and computation</p>
-                <h1 class="hero-heading text-xxl">
-                    Filippo Giovagnini
-                </h1>
-                <p class="hero-text text-lg">
-                    PhD candidate at Imperial College London.
+                <nav class="section-nav" aria-label="Page sections">
+                    <a href="#ml-work">AI work</a>
+                    <a href="#publications">Research</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#software">Software</a>
+                    <a href="#teaching">Teaching</a>
+                </nav>
+            </aside>
+
+            <div class="bio-copy">
+                <p>
+                    Hello! I am a PhD candidate in Mathematics at
+                    <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a>,
+                    supervised by <a href="https://www.imperial.ac.uk/people/d.crisan" target="_blank" rel="noopener noreferrer">Professor Dan Crisan</a>.
+                    My work spans deep-learning theory, high-dimensional probability and stochastic analysis.
                 </p>
-                <div class="hero-buttons">
-                    <a href="research.html" class="btn btn-primary">Explore research</a>
-                    <a href="files/Curriculum_Vitae.pdf" class="btn btn-secondary">View CV</a>
-                </div>
+                <p>
+                    I am interested in transformer and LLM architectures, agent systems, model evaluation and efficient inference. Recent work includes quantitative universality for deep neural networks, a decoder-only transformer built from scratch in PyTorch, and a Kaggle Silver Medal for agent-guided ONNX model optimization.
+                </p>
+                <p>
+                    My doctoral research studies stochastic PDEs and interacting particle approximations of fluid models. Alongside the PhD, I work on applied machine learning and data science projects at <a href="https://stripepartners.com/" target="_blank" rel="noopener noreferrer">Stripe Partners</a>.
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="main about-section">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">About</p>
-                <h2 class="text-xl">Research at the intersection of probability, analysis and computation.</h2>
-            </div>
-            <div class="about-grid">
-                <div class="main-content">
-                    <p class="main-text text-md">
-                        I am a PhD candidate at Imperial College London, supervised by Prof. Dan Crisan. My research focuses on approximating solutions of stochastic partial differential equations (SPDEs) using interacting particle systems.
-                    </p>
-                    <p class="main-text text-md">
-                        I am affiliated with the Mathematics for our Future Climate Centre for Doctoral Training (MFC CDT), a joint programme with the University of Reading and the University of Southampton.
-                    </p>
-                </div>
-                <aside class="profile-card" aria-label="Affiliation and contact">
-                    <p class="meta-label">Affiliation</p>
-                    <p>Imperial College London<br>MFC CDT</p>
-                    <div class="profile-links">
-                        <a href="https://profiles.imperial.ac.uk/f.giovagnini23" target="_blank" rel="noopener noreferrer">Imperial profile</a>
-                        <a href="mailto:f.giovagnini23@imperial.ac.uk">Email</a>
+        <section class="page-section" id="ml-work" aria-labelledby="ml-work-title">
+            <h2 id="ml-work-title">Selected machine learning work</h2>
+            <div class="timeline-entries">
+                <article class="timeline-entry">
+                    <div class="entry-mark entry-mark-black" aria-hidden="true">40</div>
+                    <div>
+                        <h3>Kaggle Silver Medal - NeuroGolf 2026</h3>
+                        <p>Ranked 40th (top 1.4%) in an AI-agent and ONNX optimization challenge. Built an iterative agent workflow for exact verification, parameter reduction and memory-constrained model design.</p>
+                        <a class="tag-link" href="https://github.com/MaxGhi8/neurogolf2026" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
-                </aside>
+                </article>
+                <article class="timeline-entry">
+                    <div class="entry-mark entry-mark-blue" aria-hidden="true">LM</div>
+                    <div>
+                        <h3>Decoder-only transformer from scratch</h3>
+                        <p>Implemented causal multi-head attention, residual blocks, normalization and a language-model head in PyTorch; developing the TinyStories training and evaluation pipeline.</p>
+                        <p class="entry-date">Ongoing</p>
+                    </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; Filippo Giovagnini</p>
+        <section class="page-section" id="publications" aria-labelledby="publications-title">
+            <div class="section-title-row">
+                <h2 id="publications-title">Publications</h2>
+                <a class="section-link" href="research.html">Research page</a>
+            </div>
+
+            <div class="publication-list">
+                <article class="publication-entry">
+                    <a class="publication-preview" href="https://arxiv.org/pdf/2608.02100" target="_blank" rel="noopener noreferrer" aria-label="Open From Information to Delegation on arXiv">
+                        <img src="images/publications/2608.02100.png" alt="First page of the Human-AI financial decision-making preprint" width="556" height="720">
+                    </a>
+                    <div class="publication-copy">
+                        <h3>From Information to Delegation: Mapping Human-AI Financial Decision Making</h3>
+                        <p>Iman Munire Bilal, Yingcan Carol Wang, Ajan Raj, <strong>Filippo Giovagnini</strong>, Pranav Tewari, Yuwei Zhang, Mei-Chen Zoe Liou, Qamar Zaman</p>
+                        <p class="publication-venue"><em>Preprint, 2026</em></p>
+                        <a class="tag-link" href="https://arxiv.org/pdf/2608.02100" target="_blank" rel="noopener noreferrer">Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication-entry">
+                    <a class="publication-preview publication-preview--diagram" href="https://arxiv.org/abs/2605.02771" target="_blank" rel="noopener noreferrer" aria-label="Open Universality in Deep Neural Networks on arXiv">
+                        <img src="images/publications/universality_paper.png" alt="Convergence plots for KS, W1 and W2 distances" width="4234" height="1608">
+                    </a>
+                    <div class="publication-copy">
+                        <h3>Universality in Deep Neural Networks: An approach via the Lindeberg exchange principle</h3>
+                        <p><strong>Filippo Giovagnini</strong>, Sotirios Kotitsas, Marco Romito</p>
+                        <p class="publication-venue"><em>Preprint, 2026</em></p>
+                        <a class="tag-link" href="https://arxiv.org/abs/2605.02771" target="_blank" rel="noopener noreferrer">Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication-entry">
+                    <a class="publication-preview publication-preview--diagram" href="https://arxiv.org/abs/2606.07096" target="_blank" rel="noopener noreferrer" aria-label="Open Non-selection of Lagrangian trajectories on arXiv">
+                        <img src="images/publications/grid_diagram.png" alt="Grid diagram illustrating alternating shear flows" width="1200" height="402">
+                    </a>
+                    <div class="publication-copy">
+                        <h3>Non-selection of Lagrangian trajectories in the zero-noise limit for a class of stochastic regularizations</h3>
+                        <p>Lucio Galeati, <strong>Filippo Giovagnini</strong>, Massimo Sorella</p>
+                        <p class="publication-venue"><em>Preprint, 2026</em></p>
+                        <a class="tag-link" href="https://arxiv.org/abs/2606.07096" target="_blank" rel="noopener noreferrer">Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication-entry">
+                    <a class="publication-preview" href="https://arxiv.org/abs/2504.12960" target="_blank" rel="noopener noreferrer" aria-label="Open the three-dimensional Navier-Stokes-alpha preprint on arXiv">
+                        <img src="images/publications/2504.12960.png" alt="First page of the three-dimensional particle approximation preprint" width="509" height="720">
+                    </a>
+                    <div class="publication-copy">
+                        <h3>A uniform particle approximation to the Navier-Stokes-alpha models in three dimensions with advection noise</h3>
+                        <p><strong>Filippo Giovagnini</strong>, Dan Crisan</p>
+                        <p class="publication-venue"><em>Preprint, 2025</em></p>
+                        <a class="tag-link" href="https://arxiv.org/abs/2504.12960" target="_blank" rel="noopener noreferrer">Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication-entry">
+                    <a class="publication-preview" href="https://arxiv.org/abs/2410.23163" target="_blank" rel="noopener noreferrer" aria-label="Open the two-dimensional point vortex preprint on arXiv">
+                        <img src="images/publications/2410.23163.png" alt="First page of the two-dimensional point vortex approximation preprint" width="509" height="720">
+                    </a>
+                    <div class="publication-copy">
+                        <h3>A uniform point vortex approximation for the solution of the two-dimensional Navier-Stokes equation with transport noise</h3>
+                        <p><strong>Filippo Giovagnini</strong>, Dan Crisan</p>
+                        <p class="publication-venue"><em>Preprint, 2024</em></p>
+                        <a class="tag-link" href="https://arxiv.org/abs/2410.23163" target="_blank" rel="noopener noreferrer">Paper</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="note-entry">
+                <div class="entry-mark" aria-hidden="true">RG</div>
+                <div>
+                    <h3>Stochastic perturbations of transport equations</h3>
+                    <p>A review of Flandoli, Gubinelli and Priola (2010), prepared for an Imperial College London reading group.</p>
+                    <a class="tag-link" href="files/review_of_flandoli_priola_gubinelli.pdf">Note</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section" id="experience" aria-labelledby="experience-title">
+            <div class="section-title-row">
+                <h2 id="experience-title">Experience</h2>
+                <a class="section-link" href="cv.html">Full CV</a>
+            </div>
+            <div class="timeline-entries">
+                <article class="timeline-entry">
+                    <a class="entry-mark entry-mark-logo entry-mark-logo--stripe" href="https://stripepartners.com/" target="_blank" rel="noopener noreferrer" aria-label="Stripe Partners website">
+                        <img src="images/stripe_partners_logo.jpeg" alt="" width="200" height="200">
+                    </a>
+                    <div>
+                        <h3><a href="https://stripepartners.com/" target="_blank" rel="noopener noreferrer">Stripe Partners</a></h3>
+                        <p>Data Scientist, part-time</p>
+                        <p class="entry-date">March 2026 - Present</p>
+                    </div>
+                </article>
+                <article class="timeline-entry">
+                    <div class="entry-mark entry-mark-blue" aria-hidden="true">AI</div>
+                    <div>
+                        <h3><a href="https://www.aletaindex.com" target="_blank" rel="noopener noreferrer">Aleta Index</a></h3>
+                        <p>Machine Learning Engineer, part-time</p>
+                        <p class="entry-date">February 2025 - February 2026</p>
+                    </div>
+                </article>
+                <article class="timeline-entry timeline-entry--wide-logo">
+                    <div class="entry-logo-wide" aria-hidden="true">
+                        <img src="images/imperial-college-business-school-logo-vector.png" alt="" width="900" height="500">
+                    </div>
+                    <div>
+                        <h3>Imperial Business School</h3>
+                        <p>Teaching Assistant</p>
+                        <p class="entry-date">September 2024 - Present</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section" id="education" aria-labelledby="education-title">
+            <h2 id="education-title">Education</h2>
+            <div class="timeline-entries">
+                <article class="timeline-entry timeline-entry--wide-logo">
+                    <div class="entry-logo-wide" aria-hidden="true">
+                        <img src="images/imperial-logo.png" alt="" width="600" height="270">
+                    </div>
+                    <div>
+                        <h3>Imperial College London</h3>
+                        <p>PhD in Stochastic Analysis, supervised by Professor Dan Crisan</p>
+                        <p class="entry-date">2023 - Present</p>
+                    </div>
+                </article>
+                <article class="timeline-entry">
+                    <div class="entry-mark entry-mark-logo entry-mark-logo--institution" aria-hidden="true">
+                        <img src="images/eth_logo.png" alt="" width="412" height="416">
+                    </div>
+                    <div>
+                        <h3>ETH Zurich</h3>
+                        <p>Exchange programme in Mathematics</p>
+                        <p class="entry-date">2023</p>
+                    </div>
+                </article>
+                <article class="timeline-entry">
+                    <div class="entry-mark entry-mark-logo entry-mark-logo--institution" aria-hidden="true">
+                        <img src="images/UniversitaPisa_logo.webp" alt="" width="330" height="337">
+                    </div>
+                    <div>
+                        <h3>University of Pisa</h3>
+                        <p>Master's and Bachelor's degrees in Mathematics</p>
+                        <p class="entry-date">2018 - 2023</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section" id="software" aria-labelledby="software-title">
+            <div class="section-title-row">
+                <h2 id="software-title">Selected code</h2>
+                <a class="section-link" href="https://github.com/filippogiovagnini" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+            </div>
+            <div class="repo-container" id="repo-container" aria-live="polite"></div>
+        </section>
+
+        <section class="page-section" id="teaching" aria-labelledby="teaching-title">
+            <div class="section-title-row">
+                <h2 id="teaching-title">Teaching</h2>
+                <a class="section-link" href="ta-material.html">All materials</a>
+            </div>
+            <div class="teaching-entries">
+                <article class="teaching-entry">
+                    <p class="entry-date">2025/26</p>
+                    <h3>SCforF lecture notes</h3>
+                    <p>Current course notes and revision properties.</p>
+                    <div class="inline-links">
+                        <a class="tag-link" href="https://imperiallondon-my.sharepoint.com/:b:/g/personal/fg323_ic_ac_uk/EYRKwOlWiQhNiLSioweD-WIBg19HFG6Zzrfy9GXZwG_69Q?e=MRr4J4" target="_blank" rel="noopener noreferrer">Notes</a>
+                        <a class="tag-link" href="files/SCforF.pdf">Revision PDF</a>
+                    </div>
+                </article>
+                <article class="teaching-entry">
+                    <p class="entry-date">2024/25 archive</p>
+                    <h3>Brownian motion computational example</h3>
+                    <p>A notebook illustrating Brownian motion for students working through the course material.</p>
+                    <a class="tag-link" href="https://github.com/filippogiovagnini/SCforF/blob/main/intro_BM_SDE.ipynb" target="_blank" rel="noopener noreferrer">Notebook</a>
+                </article>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Filippo Giovagnini</p>
             <a href="mailto:f.giovagnini23@imperial.ac.uk">f.giovagnini23@imperial.ac.uk</a>
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
+        </footer>
+    </main>
 
+    <script type="module" src="js/main.js"></script>
+</body>
 </html>
