@@ -454,6 +454,13 @@ a.entry-mark-logo:hover {
     margin-bottom: 0;
 }
 
+.footer-emails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.25rem 1rem;
+}
+
 /* Secondary pages keep the same quiet, narrow visual system. */
 .container,
 .container-sm,
@@ -751,6 +758,10 @@ body > .site-footer p {
         align-items: flex-start;
         flex-direction: column;
         gap: 0.25rem;
+    }
+
+    .footer-emails {
+        justify-content: flex-start;
     }
 }
 
